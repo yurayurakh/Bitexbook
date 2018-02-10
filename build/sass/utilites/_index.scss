@@ -1,0 +1,18 @@
+$font_size: 14px;
+$font_color: #fff;
+$font: 'ProximaNovaRegular';
+$bg_color: #ffffff;
+$line_height: 1.1;
+
+@font-face {
+    font-family:'ProximaNovaRegular';
+    src: url('../fonts/a Regular.eot');
+    src: url('../fonts/a Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/a Regular.woff2') format('woff2'),
+    url('../fonts/a Regular.woff') format('woff'),
+    url('../fonts/a Regular.svg#a Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}

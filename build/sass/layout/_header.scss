@@ -1,0 +1,37 @@
+.header {
+    padding: 24px 0;
+
+    &_lang {
+        display: flex;
+        justify-content: center;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            margin: 0 11px;
+            cursor: pointer;
+            transition: color .3s ease;
+
+            span {
+                font-size: 18px;
+                letter-spacing: 0.5px;
+            }
+
+            img {
+                margin-right: 8px;
+                padding: 4px;
+                border: 1px solid #ffffff;
+                border-radius: 100%;
+                transition: border-color .3s ease;
+            }
+
+            &:hover, &.active-lg {
+                color: #00ffa8;
+
+                img {
+                    border-color: #00ffa8;
+                }
+            }
+        }
+    }
+}

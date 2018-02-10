@@ -1,0 +1,93 @@
+.main-block {
+    padding-top: 80px;
+    padding-bottom: 101px;
+    text-align: center;
+
+    &_title {
+        margin-bottom: 17px;
+        text-align: center;
+        font-size: 27.5px;
+        line-height: 1.4;
+        letter-spacing: 0.7px;
+    }
+
+    &_logo {
+        margin-bottom: 32px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &_sub-title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 1.25;
+        letter-spacing: 0.6px;
+
+        span {
+            color: #59ffda;
+            font-weight: bold;
+        }
+    }
+
+    &_information {
+
+        .information_list {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .information_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 28px;
+
+            &__icon {
+                width: 50px;
+                margin-right: 20px;
+                text-align: center;
+            }
+
+            &__text {
+                padding-left: 19px;
+                border-left: 1px solid #65c2ff;
+                text-align: left;
+                font-size: 16.9px;
+                line-height: 1.19;
+                letter-spacing: 0.4px;
+
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .information_btn {
+            margin-bottom: 30px;
+        }
+
+        .btn--green {
+            position: relative;
+            padding: 14px 20px 12px 82px;
+            text-align: left;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 43px;
+                width: 28px;
+                height: 20px;
+                margin-top: -10px;
+                background: url("../img/icon/icon_youtube.png") center no-repeat;
+            }
+        }
+    }
+}

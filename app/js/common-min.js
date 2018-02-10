@@ -1,0 +1,1 @@
+$(document).ready(function(){var t,e,a;t=$(document).height(),e=$(".main-content"),a=$(".footer").outerHeight(),e.outerHeight(t-a);var n;(n=$(".js-lang")).on("click touch",function(){$(this).data("lang"),n.removeClass("active-lg"),$(this).addClass("active-lg")})});

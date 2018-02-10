@@ -1,0 +1,62 @@
+@media (min-width: 992px) {
+
+    .container {
+        width: 970px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container {
+        width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    width: 276px;
+    padding: 14px 20px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16.9px;
+    line-height: 1.19;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+    &--green {
+        background: #00D996;
+
+        &:hover {
+            background: darken(#00D996, 10%);
+        }
+    }
+
+    &--blue {
+        background: #00c0ff;
+
+        &:hover {
+            background: darken(#00c0ff, 10%);
+        }
+    }
+}
