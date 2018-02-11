@@ -1,7 +1,11 @@
 .main-block {
-    padding-top: 80px;
-    padding-bottom: 101px;
+    padding-top: 60px;
     text-align: center;
+    padding-bottom: 40px;
+
+    @media (max-width: 768px) {
+        padding: 20px 10px 40px;
+    }
 
     &_title {
         margin-bottom: 17px;
@@ -29,6 +33,13 @@
         span {
             color: #59ffda;
             font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+
+            br {
+                display: none;
+            }
         }
     }
 

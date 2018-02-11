@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,16 +12,16 @@
 
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="overall">
         <div class="main-content">
             <header class="header">
                 <div class="container">
                     <div class="header_lang">
-                        <a role="button" class="header_lang__item active-lg js-lang" data-lang="ru">
+                        <a role="button" class="header_lang__item is-active js-lang lang-ru" data-lang="ru">
                             <img src="img/icon/ru.png" alt="">
                             <span>RU</span>
                         </a>
-                        <a role="button" class="header_lang__item js-lang" data-lang="en">
+                        <a role="button" class="header_lang__item js-lang lang-en" data-lang="en">
                             <img src="img/icon/en.png" alt="">
                             <span>EN</span>
                         </a>
@@ -30,19 +30,19 @@
             </header>
             <section class="main-block">
                 <div class="container">
-                    <h1 class="main-block_title">
+                    <h1 class="main-block_title" id="banner-title">
                         СТАРТОВАЛА ПЕРВАЯ ЛЕГАЛЬНАЯ КРИПТОБИРЖА
                     </h1>
                     <div class="main-block_logo">
                         <img src="img/logo.png" alt="">
                     </div>
-                    <h2 class="main-block_sub-title">
+                    <h2 class="main-block_sub-title" id="banner-desc">
                         Купить криптовлюту Bitcoin, Ethereum, Litecoin <br/>
                         и другие теперь <span>просто, легко и надежно</span> как в банке
                     </h2>
                     <div class="main-block_information">
                         <div class="information_btn">
-                            <a role="button" class="btn btn--green">
+                            <a role="button" class="btn btn--green js-modal-btn" id="video-btn">
                                 О нас, за 30 секунд
                             </a>
                         </div>
@@ -52,11 +52,10 @@
                                     <img src="img/icon/icon_lock.png" alt="">
                                 </div>
                                 <div class="information_item__text">
-                                    <a href="https://bitexbook.com/2fa">
+                                    <a href="https://bitexbook.com/2fa?code=kim1" id="benefits-1">
                                         Безопасность средств на максимуме -<br/>
                                         5 уровней защиты счетов клиентов
                                     </a>
-
                                 </div>
                             </div>
                             <div class="information_item">
@@ -64,7 +63,7 @@
                                     <img src="img/icon/icon_clock.png" alt="">
                                 </div>
                                 <div class="information_item__text">
-                                    <a>
+                                    <a id="benefits-2">
                                         Скоростная служба поддержки, даже<br/>
                                         верификция проходит до 24 часов
                                     </a>
@@ -75,15 +74,15 @@
                                     <img src="img/icon/icon_cart.png" alt="">
                                 </div>
                                 <div class="information_item__text">
-                                    <a href="https://bitexbook.com/finance/methods">
-                                        Ввод и вывод средств на карту<br/>
-                                        всего за 1 минуту
+                                    <a href="https://bitexbook.com/finance/methods?code=kim1" id="benefits-3">
+                                        Мгновенный ввод за 1 минуту<br/>
+                                        по картам VISA/MasterCard
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="information_btn">
-                            <a href="https://bitexbook.com" class="btn btn--blue">
+                            <a href="https://bitexbook.com/?code=kim1" class="btn btn--blue" id="btn-1">
                                 Перейти на сайт биржи
                             </a>
                         </div>
@@ -112,6 +111,16 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal_wrap">
+            <a role="button" class="modal_close js-modal-close">X</a>
+            <div class="video__wrap">
+                <div class="js-video video is-video-active" id="video-ru"></div>
+                <div class="js-video video" id="video-en"></div>
+            </div>
+        </div>
     </div>
 
     <!-- jQuery -->
